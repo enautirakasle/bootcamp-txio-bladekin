@@ -6,9 +6,13 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+
 ## About proyect
+
 Proiektu hau Laravel Bootcamp-eko Chiper with blade eskuliburuarekin eginda dago.
+
 ### Instalazioa
+
 1. git clone https://github.com/enautirakasle/bootcamp-txio-bladekin.git
 2. cd bootcamp-txio-bladekin
 3. [Installing Composer Dependencies for Existing Applications](https://laravel.com/docs/10.x/sail#installing-sail-into-existing-applications) -eko komandoa
