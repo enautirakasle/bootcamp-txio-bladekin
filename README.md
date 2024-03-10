@@ -11,18 +11,50 @@
 
 Proiektu hau Laravel Bootcamp-eko Chiper with blade eskuliburuarekin eginda dago.
 
-### Instalazioa
+## Installation
 
-1. git clone https://github.com/enautirakasle/bootcamp-txio-bladekin.git
-2. cd bootcamp-txio-bladekin
-3. [Installing Composer Dependencies for Existing Applications](https://laravel.com/docs/10.x/sail#installing-sail-into-existing-applications) -eko komandoa
-4. .env fitxategia beste laravel/sail proiektu batetik kopiatu edo env.example copiatu eta .env sortu.
-5. APP_KEY balioa borratu
-6. datu base izena proiektu izena jarri
-7. datu base erabiltzailea sail, datu base pasahitza password
-8. sail up -d
-9. APP_KEY sortu. sail artisan key:generate
-10. sail artisan migrate
+Install my-project with next steps
+
+1. Proiektua descargatu
+```bash
+git clone https://github.com/enautirakasle/bootcamp-txio-bladekin.git
+cd bootcamp-txio-bladekin
+```
+2. [Installing Composer Dependencies for Existing Applications](https://laravel.com/docs/10.x/sail#installing-sail-into-existing-applications)
+```bash
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v "$(pwd):/var/www/html" \
+    -w /var/www/html \
+    laravelsail/php83-composer:latest \
+    composer install --ignore-platform-reqs
+```
+
+3. .env fitxategia beste laravel/sail proiektu batetik kopiatu edo env.example copiatu eta .env sortu.
+
+4. evn aldatu
+```bash
+APP_KEY=<ezabatu>
+
+DB_DATABASE=bootcamp-txio-bladekin
+DB_USERNAME=sail
+DB_PASSWORD=password
+```
+
+5. zerbitzarioa martxan jarri
+```bash
+sail up -d
+```
+
+6. APP_KEY berria sortu
+```bash
+sail artisan key:generate
+```
+
+7. migrazioak exekutatu
+```bash
+sail artisan migrate
+```
 
 ## About Laravel
 
