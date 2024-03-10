@@ -46,15 +46,27 @@ DB_PASSWORD=password
 sail up -d
 ```
 
-6. APP_KEY berria sortu
+6. node dependentziak instalatu
+```bash
+sail npm install
+```
+
+7. APP_KEY berria sortu
 ```bash
 sail artisan key:generate
 ```
 
-7. migrazioak exekutatu
+8. migrazioak exekutatu
 ```bash
 sail artisan migrate
 ```
+
+9. node zerbitzaria martxan jarri
+```bash
+sail npm run dev
+```
+
+10. aplikazioa zabaldu [http://localhost](http://localhost)
 
 ## About Laravel
 
