@@ -6,6 +6,19 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+## About proyect
+Proiektu hau Laravel Bootcamp-eko Chiper with blade eskuliburuarekin eginda dago.
+### Instalazioa
+1. git clone https://github.com/enautirakasle/bootcamp-txio-bladekin.git
+2. cd bootcamp-txio-bladekin
+3. [Installing Composer Dependencies for Existing Applications](https://laravel.com/docs/10.x/sail#installing-sail-into-existing-applications) -eko komandoa
+4. .env fitxategia beste laravel/sail proiektu batetik kopiatu edo env.example copiatu eta .env sortu.
+5. APP_KEY balioa borratu
+6. datu base izena proiektu izena jarri
+7. datu base erabiltzailea sail, datu base pasahitza password
+8. sail up -d
+9. APP_KEY sortu. sail artisan key:generate
+10. sail artisan migrate
 
 ## About Laravel
 
